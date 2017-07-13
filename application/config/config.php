@@ -1,7 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
-if (!defined('VERSION')) define('VERSION', '0.0.2');
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -24,7 +22,7 @@ if (!defined('VERSION')) define('VERSION', '0.0.2');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8888/rl_oswal/';
+$config['base_url'] = 'http://localhost/rl_oswal';
 
 /*
 |--------------------------------------------------------------------------

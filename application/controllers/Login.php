@@ -12,7 +12,7 @@ class Login extends CI_Controller
     {
     	$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
-    	$this->load->view('layouts/login_layout');
+    	$this->load->view('layouts/fullwidth_layout');
     }
 
     public function register()
@@ -31,7 +31,7 @@ class Login extends CI_Controller
 
         if ($this->form_validation->run() == FALSE)
         {
-            $this->load->view('layouts/login_layout');
+            $this->load->view('layouts/fullwidth_layout');
         }
         else
         {

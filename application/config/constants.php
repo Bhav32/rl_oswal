@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+defined('VERSION') OR define('VERSION', '0.1.2');
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace
