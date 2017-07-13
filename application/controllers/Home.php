@@ -9,7 +9,7 @@ class Home extends CI_Controller
        $this->load->helper('url');
 	}
 
-    public function home()
+    public function index()
     {
     	$this->load->view('layouts/homepage');
     }

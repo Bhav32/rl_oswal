@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+if (!defined('VERSION')) define('VERSION', '0.0.2');
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
