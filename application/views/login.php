@@ -22,10 +22,17 @@
 			<div class="col-sm-4">
 				<div class="signup-form"><!--sign up form-->
 					<h2>New User Signup!</h2>
-					<div class="alert alert-danger">
-						<?php echo validation_errors(); ?>
-					</div>
-					<form action="login/register" method="post">
+					<?php 
+						if(validation_errors()) 
+						{ ?>
+							<div class="alert alert-danger"> <?= validation_errors(); ?> </div>
+						<?php 
+						}
+						if($this->session->flashdata('msg')) { ?>
+						<div class="alert alert-success">
+						<?php echo $this->session->flashdata('msg'); }?>
+						</div>
+						<form action="<?= base_url('login/register'); ?>" method="post">
      					<?php echo form_open('form'); ?>
 						<input type="text" name="firstName" value="<?php echo set_value('firstName'); ?>" placeholder="First Name"/>
 						<input type="text" name="lastName" value="<?php echo set_value('lastName'); ?>" placeholder="Last Name"/>
