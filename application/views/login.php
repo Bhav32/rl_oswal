@@ -28,10 +28,8 @@
 							<div class="alert alert-danger"> <?= validation_errors(); ?> </div>
 						<?php 
 						}
-						if($this->session->flashdata('msg')) { ?>
-						<div class="alert alert-success">
-						<?php echo $this->session->flashdata('msg'); }?>
-						</div>
+						echo $this->session->flashdata('msg'); 
+						?>
 						<form action="<?= base_url('login/register'); ?>" method="post">
      					<?php echo form_open('form'); ?>
 						<input type="text" name="firstName" value="<?php echo set_value('firstName'); ?>" placeholder="First Name"/>
