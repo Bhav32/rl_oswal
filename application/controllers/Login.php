@@ -22,7 +22,7 @@ class Login extends CI_Controller
 		//Form Validation Rules
 		$this->form_validation->set_rules('firstName', 'First Name', 'required');
         $this->form_validation->set_rules('lastName', 'Last Name', 'required',
-            array('required' => 'You must provide a %s.')
+            array('required' => 'You must provide %s.')
         );
         $this->form_validation->set_rules('password', 'password', 'required|min_length[8]|max_length[15]');
         $this->form_validation->set_rules('confirmPassword', 'confirm Password', 'required|matches[password]');
