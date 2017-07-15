@@ -23,13 +23,18 @@
 				<div class="signup-form"><!--sign up form-->
 					<h2>New User Signup!</h2>
 					<?php 
-						if(validation_errors()) 
+					$err=validation_errors();
+						if($err) 
 						{ ?>
-							<div class="alert alert-danger"> <?= validation_errors(); ?> </div>
+							<div class="alert alert-danger"> <?= $err ?> </div>
 						<?php 
 						}
-						echo $this->session->flashdata('msg'); 
+						$message=$this->session->flashdata('msg');
+						if($message) {
 						?>
+						<div class="alert alert-success"><?= $message; ?>
+						</div>
+						<?php } ?>
 						<form action="<?= base_url('login/register'); ?>" method="post">
      					<?php echo form_open('form'); ?>
 						<input type="text" name="firstName" value="<?php echo set_value('firstName'); ?>" placeholder="First Name"/>

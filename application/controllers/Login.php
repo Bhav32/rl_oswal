@@ -30,11 +30,10 @@ class Login extends CI_Controller
 
         if ($this->form_validation->run() == FALSE)
         {
-            $this->load->view('layouts/fullwidth_layout');
+            $this->load->view(base_url('layouts/fullwidth_layout'));
         }
         else
         {
-            //$password = $this->input->post('password');
             $data = array(
                 'firstName' => $this->input->post('firstName'),
                 'lastName' => $this->input->post('lastName'),
@@ -48,8 +47,7 @@ class Login extends CI_Controller
             $this->load->model('user_model'); // load model 
             $this->user_model->adduser($data);
             $this->session->set_flashdata('msg', 'User Added Successfully!!');
-            //redirect('layouts/fullwidth_layout',$data);
-            //$this->load->view('layouts/fullwidth_layout',$data);
+            redirect(base_url('login'));
         }
     }
 }
