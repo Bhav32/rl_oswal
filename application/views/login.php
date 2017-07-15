@@ -22,13 +22,8 @@
 			<div class="col-sm-4">
 				<div class="signup-form"><!--sign up form-->
 					<h2>New User Signup!</h2>
-					<?php 
-					$err=validation_errors();
-						if($err) 
-						{ ?>
-							<div class="alert alert-danger"> <?= $err ?> </div>
-						<?php 
-						}
+						<?= validation_errors() ?>
+						<?php
 						$message=$this->session->flashdata('msg');
 						if($message) {
 						?>
@@ -39,7 +34,7 @@
      					<?php echo form_open('form'); ?>
 						<input type="text" name="firstName" value="<?php echo set_value('firstName'); ?>" placeholder="First Name"/>
 						<input type="text" name="lastName" value="<?php echo set_value('lastName'); ?>" placeholder="Last Name"/>
-						<input type="email" name="email" value="<?php echo set_value('email'); ?>" placeholder="Email Address"/>
+						<input type="email" name="email_id" value="<?php echo set_value('email_id'); ?>" placeholder="Email Address"/>
 						<input type="password" name="password" value="<?php echo set_value('password'); ?>" placeholder="Password"/>
 						<input type="password" name="confirmPassword" value="<?php echo set_value('confirmPassword'); ?>" placeholder="Confirm Password"/>
 						<input type="text" name="contactNo" value="<?php echo set_value('contactNo'); ?>" placeholder="Contact No."/>
