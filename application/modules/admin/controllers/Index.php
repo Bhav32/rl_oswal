@@ -11,7 +11,7 @@ class Index extends CI_Controller
 
     public function index()
     {
-    	die('hello');
+    	die('welcome to admin page');
     	//$this->load->view('main');
     }
     
