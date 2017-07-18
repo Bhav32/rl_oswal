@@ -11,8 +11,11 @@ class Index extends CI_Controller
 
     public function index()
     {
-    	die('welcome to admin page');
-    	//$this->load->view('main');
+    	$this->load->view('layouts/login_layout');
+    }
+
+    public function home(){
+      $this->load->view('layouts/main');
     }
     
 }
