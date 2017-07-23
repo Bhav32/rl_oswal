@@ -1,14 +1,19 @@
 
 <!--end-Footer-part--> 
-<script src="<?= base_url('assets/admin/js/jquery.min.js'); ?>"></script> 
-<script src="<?= base_url('assets/admin/js/jquery.ui.custom.js'); ?>"></script> 
-<script src="<?= base_url('assets/admin/js/bootstrap.min.js'); ?>"></script> 
-<script src="<?= base_url('assets/admin/js/matrix.js'); ?>"></script> 
-<script src="<?= base_url('assets/admin/js/matrix.dashboard.js'); ?>"></script>  
-<script src="<?= base_url('assets/admin/js/jquery.dataTables.min.js'); ?>"></script> 
-<script src="<?= base_url('assets/admin/js/bootstrap-datepicker.js'); ?>"></script> 
-<script src="<?= base_url('assets/admin/js/matrix.form_common.js'); ?>"></script> 
-
+<script src="<?= base_url('assets/admin/js/excanvas.min.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/jquery.min.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/jquery.ui.custom.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/bootstrap.min.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/matrix.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/jquery.dataTables.min.js?ver=<?php echo VERSION; ?>') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/jquery.peity.min.js?ver=<?php echo VERSION; ?> ') ?>"></script>  
+<script src="<?= base_url('assets/admin/js/jquery.validate.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/matrix.form_validation.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/jquery.wizard.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/jquery.uniform.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/select2.min.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/matrix.popover.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/matrix.tables.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
 
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
