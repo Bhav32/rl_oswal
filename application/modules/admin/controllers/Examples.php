@@ -23,7 +23,7 @@ class Examples extends MY_Controller
 		//$this->force_ssl();
 
 		// Form and URL helpers always loaded (just for convenience)
-		$this->load->helper('url');
+		
 		$this->load->helper('form');
 	}
 
