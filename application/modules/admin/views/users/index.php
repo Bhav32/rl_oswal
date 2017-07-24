@@ -42,7 +42,7 @@
 	                <td> 2017-07-19 14:02:38</td>
 	                <td> 
 	                	<a href="#"><i class="icon icon-edit"></i> </a>
-                        <a href="#"><i class="icon-trash"></i></a>
+                        <a href="#" ><i class="icon-trash"></i></a>
                     </td>
                 </tr>
                 <tr>

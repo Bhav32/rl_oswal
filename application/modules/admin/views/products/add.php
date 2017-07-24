@@ -13,64 +13,66 @@
           <h5>Add Product Details</h5>
         </div>
         <div class="widget-content nopadding">
-          <form action="#" method="get" class="form-horizontal">
+          <form action="<?php echo base_url().'admin/products'; ?>" method="post" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">Product Name :</label>
               <div class="controls">
-                <input type="text" class="span5" placeholder="Product name" />
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Product detail :</label>
-              <div class="controls">
-                <input type="text" class="span5" placeholder="Product detail" />
+                <input name="product_name" type="text" class="span5" placeholder="Product name" />
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">Prize :</label>
               <div class="controls">
-                <input type="password"  class="span5" placeholder="Prize"  />
+                <input type="text" name="price" class="span5" placeholder="Prize"  />
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">Product Size :</label>
-              <div class="controls">
-                <input type="text" class="span5" placeholder="Product Size" />
+              <label class="control-label">Sizes: </label>
+              <div class="controls" style="width: 420px;">
+                <select name="sizes" multiple placeholder="Sizes">
+                  <option>S </option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL </option>
+                  <option>XXL</option>
+                  <option>XXXL</option>
+                </select>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">Discount :</label>
+              <label for="normal" class="control-label">Dicount</label>
               <div class="controls">
-                <input type="text" class="span5" placeholder="Discount" />
+                <input type="text" name="discount" id="mask-percent" placeholder="Discount" class="span5 mask text">
               </div>
             </div>
              <div class="control-group">
               <label class="control-label">Material And Care :</label>
               <div class="controls">
-                <input type="text" class="span5" placeholder="Material And Care" />
+                <input type="text" name="product_care" class="span5" placeholder="Material And Care" />
                 </div>
             </div>
             <div class="control-group">
               <label class="control-label">Description :</label>
               <div class="controls">
-                <input type="text" class="span5" placeholder="Description" />
+                <input type="text" class="span5" name="description" placeholder="Description" />
                 </div>
             </div>
            
             <div class="control-group">
               <label class="control-label">Extra Description :</label>
               <div class="controls">
-                <textarea class="span5" placeholder="Extra Description" ></textarea>
+                <textarea class="span5" name="ex_description" placeholder="Extra Description" ></textarea>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">File upload input</label>
               <div class="controls">
-                <div class="uploader" id="uniform-undefined"><input type="file" size="19" style="opacity: 0;"><span class="filename">No file selected</span><span class="action">Choose File</span></div>
+                <input type="file" />
               </div>
             </div>
             <div class="form-actions">
               <button type="submit" class="btn btn-success">Add</button>
+              <button type="reset" class="btn btn-success">Cancel</button>
             </div>
           </form>
         </div>

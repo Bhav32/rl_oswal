@@ -10,7 +10,7 @@
 <body>
   <?php $this->load->view('partials/header'); ?>
   <?php $this->load->view('partials/sidebar'); ?>
-  <?php $this->load->view('products'); ?>
+  <?php $this->load->view('products/add'); ?>
   <?php $this->load->view('partials/footer'); ?>
   <?php $this->load->view('partials/footer_script'); ?>
 </body>

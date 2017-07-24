@@ -9,6 +9,7 @@
 <script src="<?= base_url('assets/admin/js/jquery.peity.min.js?ver=<?php echo VERSION; ?> ') ?>"></script>  
 <script src="<?= base_url('assets/admin/js/jquery.validate.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
 <script src="<?= base_url('assets/admin/js/matrix.form_validation.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
+<script src="<?= base_url('assets/admin/js/matrix.form_common.js?ver=<?php echo VERSION; ?> ') ?>"></script>
 <script src="<?= base_url('assets/admin/js/jquery.wizard.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
 <script src="<?= base_url('assets/admin/js/jquery.uniform.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
 <script src="<?= base_url('assets/admin/js/select2.min.js?ver=<?php echo VERSION; ?> ') ?>"></script> 
